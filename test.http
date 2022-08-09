@@ -1,0 +1,36 @@
+GET http://localhost:3000/api/members
+
+###
+GET http://localhost:3000/api/members?team=engineering
+
+###
+GET http://localhost:3000/api/members/1
+
+
+###
+POST http://localhost:3000/api/members
+Content-Type: application/json
+
+{
+  "name" : "William",
+  "team" : "Engineering",
+  "position" : "iOS Developer",
+  "emailAddress" : "William@google.com",
+  "phoneNumber" : "011-xxxx-xxxx",
+  "admissionDate" : "2021/06/12",
+  "birthday" : "1995/09/27",
+  "profileImage" : "profile11.png"
+}
+
+###
+PUT http://localhost:3000/api/members/1
+Content-Type: application/json
+
+  {
+    "id": 1,
+    "name": "Tom"
+  }
+
+
+###
+DELETE http://localhost:3000/api/members/3
